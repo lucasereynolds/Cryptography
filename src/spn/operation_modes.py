@@ -47,4 +47,4 @@ def cfb(spn, bitstring_list, initial_value):
 
 
 if __name__ == "__main__":
-    
+    pass
