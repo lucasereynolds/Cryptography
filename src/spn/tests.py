@@ -91,7 +91,7 @@ class TestSPN(unittest.TestCase):
 class Testps2(unittest.TestCase):
 
     def test_generate_difference_distribution(self):
-        from ps3 import generate_difference_distribution
+        from src.differential_cryptanalysis import generate_difference_distribution
         from SBox import SBox
         # Set Up
         sub_key = {'0': '4', '1': '1', '2': 'e', '3': '8', '4': 'd', '5': '6', '6': '2', '7': 'b', '8': 'f', '9': 'c',
@@ -121,7 +121,7 @@ class Testps2(unittest.TestCase):
         self.assertEqual(generate_difference_distribution(sbox, nibbles), expected_result)
 
     def test_generate_difference_distribution_row(self):
-        from ps3 import generate_difference_distribution_row
+        from src.differential_cryptanalysis import generate_difference_distribution_row
         from SBox import SBox
         # Set Up
         sub_key = {'0': '4', '1': '1', '2': 'e', '3': '8', '4': 'd', '5': '6', '6': '2', '7': 'b', '8': 'f', '9': 'c',
