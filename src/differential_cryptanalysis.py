@@ -1,8 +1,8 @@
 import collections
 
-from SBox import SBox
-from PBox import PBox
-from utility import xor, int2nibble, nibble2int, break2nibbles
+from src.spn.SBox import SBox
+from src.spn.PBox import PBox
+from src.utility.utility import xor, int2nibble, nibble2int, break2nibbles
 
 
 def generate_difference_distribution(sbox, nibbles):
