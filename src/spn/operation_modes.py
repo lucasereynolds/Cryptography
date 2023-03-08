@@ -1,5 +1,5 @@
 from SPN import SPN
-from utility import xor
+from src.utility.utility import xor
 
 
 def ecb(spn, bitstring_list):
@@ -47,5 +47,4 @@ def cfb(spn, bitstring_list, initial_value):
 
 
 if __name__ == "__main__":
-    pass
     
